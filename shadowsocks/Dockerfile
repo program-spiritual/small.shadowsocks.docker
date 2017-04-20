@@ -6,7 +6,7 @@ ENV VERSION v1.1.1
 
 RUN apt-get update \
 && apt-get install -y $DEPENDENCIES \
-&& rm-rf /var/lib/apt/lists/* \
+&& rm -rf /var/lib/apt/lists/* \
 &&  pip install shadowsocks
 WORKDIR /shadows
 ONBUILD ADD ./shadowsocks.json $WORKDIR
