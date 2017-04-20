@@ -12,4 +12,4 @@ WORKDIR /shadows
 ONBUILD ADD ./shadowsocks.json $WORKDIR
 ONBUILD EXPOSE $PORT
 ONBUILD COPY . $WORKDIR
-ONBUILD ENTRYPOINT ["ssserver","-c","shadowsocks.json","start"]
+ONBUILD ENTRYPOINT ["nohup","ssserver"]
