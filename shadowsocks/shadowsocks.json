@@ -1,0 +1,8 @@
+{
+  "server":"my_server_ip",
+  "server_port":22287,
+  "local_port":1080,
+  "password":"your password",
+  "timeout":600,
+  "method":"your method"
+}
